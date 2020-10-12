@@ -1,0 +1,196 @@
+!!!
+%html{:lang => "en"}
+  %head
+    %meta{content: "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
+    %meta{charset: "UTF-8"}/
+    %meta{content: "width=device-width, initial-scale=1.0", name: "viewport"}/
+    
+    %title Doctors Page
+
+    %link{href: "./css/style.css", rel: "stylesheet"}/
+    %link{crossorigin: "anonymous", href: "https://cdnjs.cloudflare.com/ajax/libs/flexboxgrid/6.3.1/flexboxgrid.min.css", :integrity => "sha512-YHuwZabI2zi0k7c9vtg8dK/63QB0hLvD4thw44dFo/TfBFVVQOqEG9WpviaEpbyvgOIYLXF1n7xDUfU3GDs0sw==", :rel => "stylesheet"}/
+    %link{crossorigin: "anonymous", href: "https://cdnjs.cloudflare.com/ajax/libs/flexboxgrid/6.3.1/flexboxgrid.css", :integrity => "sha512-whyb3qZrPEJNH+Z7P4YpD27cQ4C44kFZxqrmlNVxNB13HZlB0qJ0Xv1LKshWjGjZGtPAf+W/J+aEck5FmCf/kw==", :rel => "stylesheet"}/
+  %body
+    .container
+      %header.header-nav
+        %nav
+          %ul.row.center-xs
+            %img.margin-none.col-xs-5.col-sm-1{src: "./assets/img/IconoNav.svg"}
+              %a.margin-none.col-xs-6.col-sm-1 DoctorsCo
+            .center-xs.col-xs-10.col-sm-7
+              %li 
+                %a Blog
+              %li
+                %a Doctors
+              %li
+                %a Services
+              %li
+                %a About
+              %li
+                %a Home
+            %button.col-xs-2.col-sm-2.center-xs Login
+      .row
+        .col-xs
+          .box.center.magin-general
+            %h1 We offer Medical
+            %h1 Health Services for all Ages
+      .row
+        .col-xs
+          .box.center
+            %button Our Services
+            %button.desactivated More info
+      .row
+        .col-xs
+          .box.margin-top.center-xs
+            %img.image-ajust{:alt => "Doctors", :src => "./assets/img/Doctors.png"}
+      %section.row.center-xs.middle-xs.background-white.border-radius5
+        %ul.row.middle-xs
+          %li.col-xs-12.col-sm-3
+            %p.row.center-xs Opcion
+            %select#cars{name: "cars"}
+              %option{value: "volvo"} Opciones
+              %option{value: "saab"} Saab
+              %option{value: "opel"} Opel
+              %option{value: "audi"} Audi
+      
+          %li.col-xs-12.col-sm-3
+            %p.row.center-xs Opcion
+            %select#cars{name: "cars"} 
+              %option{value: "volvo"} Opciones
+              %option{value: "saab"} Saab
+              %option{value: "opel"} Opel
+              %option{value: "audi"} Audi
+          
+          %li.col-xs-12.col-sm-3
+            %p.row.center-xs Opcion
+            %select#cars{name: "cars"}
+              %option{value: "volvo"} Opciones
+              %option{value: "saab"} Saab
+              %option{value: "opel"} Opel
+              %option{value: "audi"} Audi
+
+          %li.col-xs-12.col-sm-3
+            %button.button-ajust More info
+    
+      .row.margin-main.background-white 
+        .col-xs-12
+          .row.middle-xs
+            %h1.col-xs-10 Our Services
+            %button.col-xs-2.button-ajust-services All Search
+          .row.card-list.col-xs
+            .row.col-xs-12.between-xs
+              %article.card.col-xs-12.col-md-3.col-lg-3
+                %header.card-header.center-xs
+                  %img.icon-size{:alt => "Icono1", :src => "./assets/img/Icono1.svg"}
+                  %h2 Titulo de la tarjeta
+                  %p Inserte texto en esta parte de la tarjeta
+              %article.card.col-xs-12.col-md-3.col-lg-3
+                %header.card-header.center-xs
+                  %img.icon-size{:alt => "Icono1", :src => "./assets/img/Icono2.svg"}
+                  %h2 Titulo de la tarjeta
+                  %p Fecha actual
+              %article.card.col-xs-12.col-md-3.col-lg-3
+                %header.card-header.center-xs
+                  %img.icon-size{:alt => "Icono1", :src => "./assets/img/Icono3.svg"}
+                  %h2 Titulo de la tarjeta
+                  %p Fecha actual
+
+            .row.col-xs-12.between-xs
+              %article.card.col-xs-12.col-md-3.col-lg-3
+                %header.card-header.center-xs
+                  %img.icon-size{:alt => "Icono1", :src => "./assets/img/Icono4.svg"}
+                  %h2 Titulo de la tarjeta
+                  %p Fecha actual
+              %article.card.col-xs-12.col-md-3.col-lg-3
+                %header.card-header.center-xs
+                  %img.icon-size{:alt => "Icono1", :src => "./assets/img/Icono5.svg"}
+                  %h2 Titulo de la tarjeta
+                  %p Fecha actual
+              %article.card.col-xs-12.col-md-3.col-lg-3
+                %header.card-header.center-xs
+                  %img.icon-size{:alt => "Icono1", :src => "./assets/img/Icono6.svg"}
+                  %h2 Titulo de la tarjeta
+                  %p Fecha actual
+          .row.col-xs.middle-xs
+            .box.col-xs-12.col-sm-6
+              %h1 Why Choose Us
+              %br
+              .box.row.col-xs-12.box-container.center-xs
+                %img.col-xs-8.col-sm-3(src="./assets/img/iconmiddle1.svg" alt="Iconomiddle1")/
+                .col-xs-12.col-sm-8.margin-left
+                  %h3 Wonderful & Suglarl
+                  %p Texto que se inserta para dar ejemplo de que hay text
+              
+              .box.row.col-xs-12.box-container.center-xs
+                %img.col-xs-8.col-sm-3(src="./assets/img/iconmiddle2.svg" alt="Iconomiddle2")/
+                .col-xs-12.col-sm-8.margin-left
+                  %h3 Interview some
+                  %p Texto que se inserta para dar ejemplo de que hay text
+              
+              .box.row.col-xs-12.box-container.center-xs  
+                %img.col-xs-8.col-sm-3(src="./assets/img/iconmiddle3.svg" alt="Iconomiddle3")/
+                .col-xs-12.col-sm-8.margin-left
+                  %h3 Ambvience Car
+                  %p Texto que se inserta para dar ejemplo de que hay text
+
+            .box.col-xs-12.col-sm-6.image-margin-top 
+              %img.image-middle(src="./assets/img/Iconomitad.svg" alt="Iconomitad")/
+      .row
+        .row.col-xs.margin-top.middle-xs.margin-bottom
+          %h1.col-xs-7.col-sm-9.margin-left Our Doctors
+          %button.col-xs-2.col-sm-1.button-off ←
+          %button.col-xs-2.col-sm-1.button-off →
+        .row.col-xs-12
+          .row.card-list-doctor.col-xs
+            .row.col-xs-12.between-xs
+              %article.card-doctor.col-xs-12.col-md-3.col-lg-3
+                %header.center-xs
+                  .row.card-background.border-top.center-xs
+                    %img.image-ajust-doctor{:alt => "Icono1", :src => "./assets/img/Doctor1.png"} 
+                  .row.center-xs.card-background
+                    %img.icon-mini.margin-top-negative.margin-lateral(src="./assets/img/twittericon.png" alt="twittericon")/
+                    %img.icon-mini.margin-top-negative.margin-lateral(src="./assets/img/instagramicon.png" alt="instagramicon")/
+                    %img.icon-mini.margin-top-negative.margin-lateral(src="./assets/img/facebookicon.png" alt="facebookicon")/
+                    %img.icon-mini.margin-top-negative.margin-lateral(src="./assets/img/pickicon.png" alt="pickicon")/
+                  .row.center-xs
+                    %h2 Steve Jacob
+                  .row.center-xs
+                    %p Inserte texto en esta parte de la tarjeta
+              %article.card-doctor.col-xs-12.col-md-3.col-lg-3
+                %header.center-xs
+                  .row.card-background.border-top.center-xs
+                    %img.image-ajust-doctor{:alt => "Icono1", :src => "./assets/img/Doctor2.png"}
+                  .row.center-xs.card-background
+                    %img.icon-mini.margin-top-negative.margin-lateral(src="./assets/img/twittericon.png" alt="twittericon")/
+                    %img.icon-mini.margin-top-negative.margin-lateral(src="./assets/img/instagramicon.png" alt="instagramicon")/
+                    %img.icon-mini.margin-top-negative.margin-lateral(src="./assets/img/facebookicon.png" alt="facebookicon")/
+                    %img.icon-mini.margin-top-negative.margin-lateral(src="./assets/img/pickicon.png" alt="pickicon")/
+                  .row.center-xs
+                    %h2 Noe Bartolo
+                  .row.center-xs
+                    %p Inserte texto en esta parte de la tarjeta
+              %article.card-doctor.col-xs-12.col-md-3.col-lg-3
+                %header.center-xs
+                  .row.card-background.border-top.center-xs
+                    %img.image-ajust-doctor{:alt => "Icono1", :src => "./assets/img/Doctor3.png"}
+                  .row.center-xs.card-background
+                    %img.icon-mini.margin-top-negative.margin-lateral(src="./assets/img/twittericon.png" alt="twittericon")/
+                    %img.icon-mini.margin-top-negative.margin-lateral(src="./assets/img/instagramicon.png" alt="instagramicon")/
+                    %img.icon-mini.margin-top-negative.margin-lateral(src="./assets/img/facebookicon.png" alt="facebookicon")/
+                    %img.icon-mini.margin-top-negative.margin-lateral(src="./assets/img/pickicon.png" alt="pickicon")/
+                  .row.center-xs
+                    %h2 Sara Lars
+                  .row.center-xs
+                    %p Inserte texto en esta parte de la tarjeta
+            .row.center-xs.col-xs-12.most-margin-top ... . . .  
+      .row.back.background-white.border-radius5  
+        .row.col-xs-12.center-xs.most-margin-top
+          %h2 Our Patients Saying         
+        .row.col-xs-12.center-xs.background-map 
+          .box.box-container-map.col-xs-12.col-sm-7
+            %br/
+            %br/
+            %img.image-radius.icon-circle(src="./assets/img/Doctor2.png" alt="")/      
+            %h1 Steven Jacob
+            %p Aqui aparace un gran texto del doctor al que se esta sitando ya que el ha hecho cosas importantes
+        .row.center-xs.col-xs-12.most-margin-top ... . . .  
